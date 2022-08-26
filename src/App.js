@@ -13,6 +13,7 @@ function App() {
   const cardElements = cardData.map(card => {
     return <Card 
       key = {card.id}
+      // can also do {...card} but would need to remove card from all the prop references in the component
       card = {card}
     />
   })
